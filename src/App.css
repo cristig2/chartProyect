@@ -1,38 +1,58 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-box {
+  text-align: center;
+  margin: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: outset;
+  color: rgba(47, 79, 79);
+  background-Color: rgba(83, 171, 171, 0.3);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subtitle-box {
+  text-align: center;
+}
+.subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: outset;
+  color: rgba(47, 79, 79);
+  background-Color: rgba(83, 171, 171, 0.3);
+}
+.chart-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  margin: 15px;
+  padding: 22px;
+  height: 400px;
+};
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) and (min-width: 400px)  {
+  .title {
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .subtitle {
+    font-size: 18px;
   }
-}
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 12px;
+  }
+};
